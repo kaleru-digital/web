@@ -112,14 +112,15 @@ export default function Hero() {
       </div>
 
       <div className="hero__inner container">
-        <p className="hero__eyebrow eyebrow" data-hero>
-          <span className="pulse" /> Estudio tecnológico · España
+        <p className="hero__eyebrow" data-hero>
+          <span>Estudio independiente</span>
+          <span>España — {new Date().getFullYear()}</span>
         </p>
 
         <h1 className="hero__title" id="hero-title" data-hero>
-          <span className="hero__line"><span className="hero__line-inner">Experiencias digitales,</span></span>
-          <span className="hero__line"><span className="hero__line-inner">software e <em className="grad">IA</em></span></span>
-          <span className="hero__line"><span className="hero__line-inner">que trabajan por ti.</span></span>
+          <span className="hero__line"><span className="hero__line-inner">Webs, apps</span></span>
+          <span className="hero__line"><span className="hero__line-inner">e <em className="serif">inteligencia</em></span></span>
+          <span className="hero__line"><span className="hero__line-inner">artificial a medida.</span></span>
         </h1>
 
         <p className="hero__rotator" data-hero>
@@ -135,13 +136,13 @@ export default function Hero() {
         </p>
 
         <p className="hero__lead" data-hero>
-          Diseñamos webs que destacan, desarrollamos herramientas que resuelven problemas e integramos
-          inteligencia artificial para que tu empresa trabaje de forma más inteligente.
+          Somos un estudio pequeño. Diseñamos webs con carácter, desarrollamos las herramientas que tu
+          negocio necesita y automatizamos el trabajo repetitivo para que dediques el tiempo a lo importante.
         </p>
 
         <div className="hero__ctas" data-hero>
           <a href="#contacto" className="btn btn--primary">
-            Cuéntanos tu proyecto <span aria-hidden="true">→</span>
+            Empezar un proyecto <span aria-hidden="true">↗</span>
           </a>
           <a href="#servicios" className="btn btn--ghost">
             Ver servicios

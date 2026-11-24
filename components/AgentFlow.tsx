@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { gsap, useGSAP } from "@/lib/gsap";
+import SectionHead from "./SectionHead";
 
 const NODES = [
   { k: "Entrada", t: "Llega un email, formulario o pedido" },
@@ -54,17 +55,17 @@ export default function AgentFlow() {
   return (
     <section className="section section--ai" id="ia" ref={root} aria-labelledby="ia-title">
       <div className="container">
-        <header className="section__head">
-          <p className="eyebrow" data-reveal>Flujos agénticos</p>
-          <h2 className="section__title" id="ia-title" data-reveal>
-            IA conectada a tu operación real,{" "}
-            <span className="grad">con tu aprobación.</span>
-          </h2>
-          <p className="section__lead" data-reveal>
-            No instalamos un chatbot genérico. Automatizamos tareas concretas y medibles, como
-            clasificar solicitudes y preparar respuestas, manteniendo el control en tus manos.
-          </p>
-        </header>
+        <SectionHead
+          index="02"
+          label="Flujos agénticos"
+          titleId="ia-title"
+          title={
+            <>
+              IA que trabaja con tus herramientas y te pide <em className="serif">permiso</em>.
+            </>
+          }
+          lead="Nada de chatbots genéricos. Automatizamos tareas concretas, como clasificar solicitudes o preparar respuestas, y tú das el visto bueno antes de que salga nada."
+        />
 
         <ol className="flow" aria-label="Ejemplo de flujo automatizado">
           {NODES.map((n, i) => (
@@ -84,9 +85,9 @@ export default function AgentFlow() {
         </ol>
 
         <ul className="guarantees">
-          {GUARANTEES.map((g) => (
+          {GUARANTEES.map((g, i) => (
             <li key={g} data-reveal>
-              <span className="check" aria-hidden="true">✓</span>
+              <span className="guarantees__n" aria-hidden="true">{String.fromCharCode(97 + i)})</span>
               {g}
             </li>
           ))}

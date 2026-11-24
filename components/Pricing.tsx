@@ -1,19 +1,21 @@
 import { plans } from "@/lib/site";
+import SectionHead from "./SectionHead";
 
 export default function Pricing() {
   return (
     <section className="section" id="planes" aria-labelledby="planes-title">
       <div className="container">
-        <header className="section__head">
-          <p className="eyebrow" data-reveal>Planes de lanzamiento</p>
-          <h2 className="section__title" id="planes-title" data-reveal>
-            Precios claros, alcance por escrito.
-          </h2>
-          <p className="section__lead" data-reveal>
-            Paquetes cerrados para empezar rápido. Cada proyecto se confirma con un presupuesto
-            detallado tras una primera conversación.
-          </p>
-        </header>
+        <SectionHead
+          index="03"
+          label="Planes"
+          titleId="planes-title"
+          title={
+            <>
+              Precios de <em className="serif">lanzamiento</em>.
+            </>
+          }
+          lead="Paquetes cerrados para empezar rápido. Después de una primera conversación te enviamos un presupuesto detallado."
+        />
 
         <div className="plans">
           {plans.map((g) => (

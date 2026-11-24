@@ -41,13 +41,15 @@ export default function Contact() {
     <section className="section" id="contacto" aria-labelledby="contacto-title">
       <div className="container contact">
         <div className="contact__intro">
-          <p className="eyebrow" data-reveal>Contacto</p>
-          <h2 className="section__title" id="contacto-title" data-reveal>
-            ¿Qué quieres <span className="grad">construir</span>?
+          <p className="head__label" data-reveal>
+            <span className="head__index">06</span>Contacto
+          </p>
+          <h2 className="head__title" id="contacto-title" data-reveal>
+            Cuéntanos qué <em className="serif">necesitas</em>.
           </h2>
-          <p className="section__lead" data-reveal>
-            Cuéntanos brevemente tu idea o el proceso que te quita tiempo. Te respondemos con una
-            propuesta concreta, sin compromiso.
+          <p className="head__lead" data-reveal>
+            Tu idea, o ese proceso que te quita horas cada semana. Te respondemos en un par de días
+            con una propuesta concreta.
           </p>
           <p className="contact__mail" data-reveal>
             O escríbenos a <a href={`mailto:${site.email}`}>{site.email}</a>

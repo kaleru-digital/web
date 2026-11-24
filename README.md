@@ -41,6 +41,8 @@ Una red social con `href: ""` aparece como "próximamente" en el pie.
 - **Logo:** se dibuja con DrawSVG al cargar, gira y hace una ola al pasar el ratón y se compacta al bajar del hero.
 - **Hero (100svh):** rejilla y halos, titular por líneas enmascaradas, palabra rotatoria con los servicios, halo que sigue al puntero y salida con scroll (scrub).
 - **Secciones:** aparición con `ScrollTrigger.batch` y flujo IA que se ilumina paso a paso.
+- **Cómo trabajamos:** la sección se fija (pin) y las fases se apilan al hacer scroll, con contador tipo odómetro, anillo DrawSVG y snap fase a fase.
+- **Servicios y Laboratorio:** carrusel horizontal con scroll-snap en móvil/tablet (`components/Slider.tsx`); rejilla en escritorio.
 - Con `prefers-reduced-motion: reduce` todo se muestra estático. Si el JS fallara, el contenido aparece a los 3 s por CSS.
 
 ## Despliegue: GitHub → Vercel
