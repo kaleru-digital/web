@@ -85,10 +85,10 @@ export const plans = [
 ] as const;
 
 export const steps = [
-  { step: "01", title: "Descubrimiento", text: "Entendemos tu negocio y el problema concreto. Sin jerga, con un alcance por escrito." },
-  { step: "02", title: "Prototipo", text: "Diseño o demo funcional con datos de prueba para validar antes de invertir más." },
-  { step: "03", title: "Desarrollo", text: "Construimos, probamos y desplegamos con entregas frecuentes que puedes revisar." },
-  { step: "04", title: "Evolución", text: "Mantenimiento y mejoras: de web a reservas, de reservas a portal, de portal a app." },
+  { step: "01", title: "Descubrimiento", text: "Una llamada para entender tu negocio y qué te está frenando. Hablamos claro y sin tecnicismos.", out: "Alcance y presupuesto por escrito", time: "1 semana" },
+  { step: "02", title: "Prototipo", text: "Antes de escribir código serio, ves el diseño o una demo con datos de prueba. Si algo no encaja, se cambia ahora.", out: "Diseño en Figma o demo navegable", time: "1–2 semanas" },
+  { step: "03", title: "Desarrollo", text: "Construimos por partes y te enseñamos avances cada semana en una URL de prueba.", out: "Proyecto publicado y probado", time: "2–6 semanas" },
+  { step: "04", title: "Evolución", text: "Lo que hoy es una web mañana puede tener reservas, un portal de clientes o una app. Crecemos contigo.", out: "Mantenimiento y mejoras", time: "Continuo" },
 ] as const;
 
 export const demos = [

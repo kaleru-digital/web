@@ -1,10 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Space_Grotesk, Instrument_Serif } from "next/font/google";
 import { site } from "@/lib/site";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 const grotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-display", display: "swap" });
+const serif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: "italic",
+  variable: "--font-serif",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -33,7 +40,7 @@ const JS_FLAG = "document.documentElement.classList.add('js')";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${inter.variable} ${grotesk.variable}`} suppressHydrationWarning>
+    <html lang="es" className={`${inter.variable} ${grotesk.variable} ${serif.variable}`} suppressHydrationWarning>
       <head>
         {/* Marca que JS está activo: los elementos animables solo se ocultan si GSAP va a revelarlos */}
         <script dangerouslySetInnerHTML={{ __html: JS_FLAG }} />

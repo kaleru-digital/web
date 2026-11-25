@@ -33,7 +33,7 @@ export default function Navbar() {
               {item.label}
             </a>
           ))}
-          <a href="#contacto" className="btn btn--small nav__cta" onClick={() => setOpen(false)}>
+          <a href="#contacto" className="btn btn--primary btn--small nav__cta" onClick={() => setOpen(false)}>
             Hablemos
           </a>
         </nav>
